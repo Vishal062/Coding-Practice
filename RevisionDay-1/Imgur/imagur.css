@@ -730,7 +730,7 @@ body {
   .BoardGames {
     display: flex;
     flex-direction: column;
-    height: 160px;
+    height: 165px;
     width: 232px;
     overflow: hidden;
     text-align: center;
@@ -749,9 +749,12 @@ body {
     height: 120px;
     background: red;
   }
-  
+.poster {
+  width:150px;
+  height:120px;
+}
   .BoardGamesBottomDiv {
-    padding: 5px;
+    padding-top: 2px;
     color: white;
     display: flex;
     flex-direction: column;
