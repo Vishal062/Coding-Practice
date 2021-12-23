@@ -2,11 +2,28 @@
 
 - https://github.com/albseb511/fsd/
 - use the javascript and react pages to see more details
-# Further reading of text book
+
+## Further reading of text book
 
 - Eloquent JS
 - You dont know JS
 Start attempting quiz from https://ydkjs-exercises.com/ daily
+
+
+
+# TOPICS FOR FULL STACK
+
+- Presently only frontend topics are being updated
+
+- [Javacript](https://github.com/albseb511/fsd/blob/master/javascript.md)
+- [React](https://github.com/albseb511/fsd/blob/master/react.md)
+- [Postman](https://github.com/albseb511/fsd/blob/master/postman.md)
+- [HTML](#)
+- [CSS](#)
+- [Data Structures & Algo](https://github.com/trekhleb/javascript-algorithms)
+
+- [Resources](https://github.com/albseb511/fsd/blob/master/resources.md)
+
 
 
 <!-- // undefined == null
