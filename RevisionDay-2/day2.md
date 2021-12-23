@@ -7,7 +7,7 @@
 
 - Eloquent JS
 - You dont know JS
-Start attempting quiz from https://ydkjs-exercises.com/ daily
+- Start attempting quiz from https://ydkjs-exercises.com/ daily
 
 
 
