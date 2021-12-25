@@ -57,3 +57,6 @@ const appendData = (data) => {
       searchSuggestions.append(suggestions);
     });
 };
+
+
+//Deployed link: https://marvelsearchvishal.vercel.app/
