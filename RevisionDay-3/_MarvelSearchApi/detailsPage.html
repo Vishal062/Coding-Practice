@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./details.css" />
+    <title>Marvel | Search Engine</title>
+  </head>
+  <body>
+    <div class="root">
+      <div class="bgImg"></div>
+      <div class="details">
+        <div class="first">
+          <div class="imgDiv">
+            <img id="img" src="" alt="" />
+          </div>
+        </div>
+        <div class="second">
+          <div class="name">
+            <h1 id="name"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let data = JSON.parse(localStorage.getItem("hero"));
+  let dataImage =
+    data?.thumbnail?.path + "/portrait_uncanny." + data?.thumbnail?.extension;
+  console.log(dataImage);
+  document.getElementById("img").src = dataImage;
+  document.getElementById("name").innerText = `Name : ${data?.name}`;
+</script>
