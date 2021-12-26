@@ -1,5 +1,4 @@
 body{
-    /* background-color: rebeccapurple; */
     background-image: url("https://media3.giphy.com/media/V4NSR1NG2p0KeJJyr5/giphy.gif");
 }
 .h{
@@ -10,7 +9,7 @@ body{
 #container{
     width:60%;
     background-image: url("https://media3.giphy.com/media/V4NSR1NG2p0KeJJyr5/giphy.gif");
-    /* background-color: rgb(165, 206, 241); */
+ 
     min-height: 20rem;
     margin: auto;
     padding: 1rem;
@@ -38,5 +37,5 @@ body{
     margin-bottom: 2%;
     background-color: rgb(249, 251, 252);
     align-items: center;
-    border-radius: 15px;
+    border-radius: 18px;
 }
