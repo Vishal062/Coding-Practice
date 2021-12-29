@@ -66,3 +66,7 @@ var hello = function (){
 
 //Variables are partially hoisted while functions are fully hoisted.
 
+//Variables defined with let and const are hoisted to the top of the block, but not initialized.
+
+//JavaScript does not hoist const/let variable
+
