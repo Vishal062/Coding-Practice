@@ -1,0 +1,4 @@
+- #                      Some Server related concepts
+- DNS :- Domain Name Server Every computer and server has a unique IP so if we want to reach facebook.com then we basically have to reach the server that is hosting it and basically need to call that IP but remembering IP addresses which look like 157.240.0.35 is difficult and not practical so WWW decided to have DNS where these ips will get a name and then when you enter the name it will redirect to the server using the ip address that is mapped.
+
+- Ports :- Ports are logical doors on a server and every action on every port is answered by some process if the port is mapped with some process ( process => program ) so if we are running a node application on port 8000 then if we hit http://localhost:8000 then this request will come to port 8000 on our computer and as we mapped node to listen to it so our node application will respond
