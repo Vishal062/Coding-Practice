@@ -23,7 +23,7 @@ const debouncing = function(fn,delay){  //here fn is a getData and delay
         clearTimeout(timer);    //To clear timeOut we have to store the timeout somewhere
         
         timer = setTimeout(() => {  //we are trying to listen between 5 sec is any key press
-            getData.apply(context,arguments);      //after the 3 sec getdata function called
+            getData.apply(context,args);      //after the 3 sec getdata function called
         },delay);
     }
 }
