@@ -34,3 +34,9 @@ const betterfunction = debouncing(getData,500); //Only call getData() function w
     //and make a api call after a delay.  
 
 //we can apply this concept on lazy loading or scrollbar events and many more things.
+
+//fn: The function that you want to execute after the debounce time
+
+//delay : The amount of time you want the debounce function to wait after the last received action before executing func. For our typeahead example, it would be the amount of time to wait after the last key press.
+
+//timer: The value used to indicate a running debounce.
