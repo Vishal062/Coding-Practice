@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <button onclick="display()">Check</button>
+      <p id="test"></p>
+      <script>
+         function display() {
+            var a = "";
+            a = a + isNaN(6234) + ": 6234<br>";
+            a = a + isNaN(-52.1) + ": -52.1<br>";
+            a = a + isNaN('Hello') + ": 'Hello'<br>";
+            a = a + isNaN(NaN) + ": NaN<br>";
+            a = a + isNaN('') + ": ''<br>";
+            a = a + isNaN(0) + ": 0<br>";
+            a = a + isNaN(false) + ": false<br>";
+            document.getElementById("test").innerHTML = a;
+         }
+      </script>
+   </body>
+</html>
+
