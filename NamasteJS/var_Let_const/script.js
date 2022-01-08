@@ -9,7 +9,9 @@ let a = 10;     //cannot access a before Initialization(new message with error);
 
 console.log(x); //refrence error its nothing present in our code.
 
-//Ex 2
+//Ex 2 
+
+/*****************************BLOCKE SCOPE*************************************************/
 /*
 First Love your explanation with examples Akshay sir, videos are exact on point!!!
 For Revision:
