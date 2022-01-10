@@ -160,3 +160,8 @@ MemoizedMovie outputs the same content as the original Movie component, but with
 ```
 
 > [`Wanna Go deep Check This Link`](https://dmitripavlutin.com/use-react-memo-wisely/)
+
+## Conclusion
+
+>React.memo() is a great tool to memoize functional components. When applied correctly, it prevents useless re-renderings when the next props equal to previous ones.
+Take precautions when memoizing components that use props as callbacks. Make sure to provide the same callback function instance between renderings.
