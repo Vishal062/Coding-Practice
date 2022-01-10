@@ -1,4 +1,4 @@
-# what is virtual dom ?
+# 1 what is virtual dom ?
 
 - In simple words, virtual DOM is just a copy of the original DOM kept in the memory and synced with the real DOM by libraries such as ReactDOM.
 
@@ -57,3 +57,16 @@ Once React knows which components has been updated, then it replaces the origina
 - React compares the Virtual DOM and pre-updated Virtual DOM and only marks the sub-tree of components that are updated. This process is called diffing.
 - The algorithm behind diffing is called Diffing algorithm.
 - React uses keys to avoid unnecessary re-renders.
+
+
+# 2 What are React Portals?
+
+> React Portal is a first-class way to render child components into a DOM node outside of the parent DOM hierarchy defined by the component tree hierarchy. The Portal's most common use cases are when the child components need to visually break out of the parent container.
+
+## Why do we need it?
+
+> When we use a modal inside a particular element (a parent component), the modal's height and width will be inherited from the component in which the modal resides. So there is a possibility that the modal will be cropped and not be shown properly in the application. A traditional modal will require CSS properties like overflow:hidden and z-index to avoid this issue.
+
+## Conclusion
+
+> React Portal comes in handy when we need to render child components outside the normal DOM hierarchy without breaking the event propagation's default behavior through the React component tree hierarchy. This is useful when rendering components such as modals, tooltips, popup messages, and so much more.
