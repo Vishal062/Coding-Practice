@@ -1,5 +1,6 @@
 # Hoisting :
 
+- Hoisting is just take attendence.
 - JavaScript only hoists declarations, not initialization
   
   blogName("Hoisting"); <br>
