@@ -123,3 +123,40 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ```
+
+# How can you memoize components in React?
+
+>Memoization is essentially just caching. Imagine a complex function that is slow to run which takes a as an argument. In order to speed up this function, you can cache the results of running the function so that when the function is run with the same inputs you can use the cached value instead of recomputing the value
+
+- example :
+
+```
+export function Movie({ title, releaseDate }) {
+  return (
+    <div>
+      <div>Movie title: {title}</div>
+      <div>Release date: {releaseDate}</div>
+    </div>
+  );
+}
+export const MemoizedMovie = React.memo(Movie);
+```
+
+> React.memo(Movie) returns a new memoized component MemoizedMovie.
+MemoizedMovie outputs the same content as the original Movie component, but with one difference — MemoizedMovie render is memoized. React reuses the memoized content as long as title and releaseDate props are the same between renderings
+
+
+```
+// First render - MemoizedMovie IS INVOKED.
+<MemoizedMovie 
+  title="Heat" 
+  releaseDate="December 15, 1995" 
+/>
+// Second render - MemoizedMovie IS NOT INVOKED.
+<MemoizedMovie
+  title="Heat" 
+  releaseDate="December 15, 1995" 
+/>
+```
+
+> [`Wanna Go deep Check This Link`](https://dmitripavlutin.com/use-react-memo-wisely/)
