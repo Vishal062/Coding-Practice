@@ -70,3 +70,56 @@ Once React knows which components has been updated, then it replaces the origina
 ## Conclusion
 
 > React Portal comes in handy when we need to render child components outside the normal DOM hierarchy without breaking the event propagation's default behavior through the React component tree hierarchy. This is useful when rendering components such as modals, tooltips, popup messages, and so much more.
+
+# What is context API?
+
+>The Context API is a React structure that enables you to exchange unique details and assists in solving prop-drilling from all levels of your application.
+
+-  This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.
+
+## React context API: How it works?
+
+> React.createContext() is all you need. It returns a consumer and a provider. Provider is a component that as it's names suggests provides the state to its children. It will hold the "store" and be the parent of all the components that might need that store. Consumer as it so happens is a component that consumes and uses the state.
+
+## How to use Context API?
+
+- Create a folder under your app root named contexts (not required. just a convention)
+- Create a file named <your context name>Context.js, e.g. userContext.js
+- import and create a context like so:
+
+```
+      import React, { createContext } from "react";
+      const UserContext = createContext();      
+```
+
+- Create a component that will wrap the provider named Provider e.g. UserProvider
+Example using React Hooks:
+
+```
+      const UserProvider = ({ children }) => {
+  const [name, setName] = useState("John Doe");
+  const [age, setAge] = useState(1);
+  const happyBirthday = () => setAge(age + 1);
+  return (
+    <UserContext.Provider value={{ name, age, happyBirthday }}>
+      {children}
+    </UserContext.Provider>
+  );
+};     
+```
+- Finally export them
+
+```
+export { UserProvider};
+```
+
+- And use them however you like
+
+```
+ReactDOM.render(
+  <UserProvider>
+    <App />
+  </UserProvider>,
+  document.getElementById("root")
+);
+```
