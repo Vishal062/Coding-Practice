@@ -1,0 +1,68 @@
+.profileImage {
+  width: 30px;
+  height: 30px;
+  text-transform: uppercase;
+  font-size: 18px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: #666;
+  color: rgb(0, 23, 231);
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+}
+
+.commentDetails {
+  max-width: 800px;
+  min-height: 20px;
+  padding: 10px;
+  position: relative;
+  padding-left: 50px;
+  color:green;
+  font-size:20px;
+}
+
+h4 {
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  margin: 0;
+}
+p {
+  margin: 4px 0 8px 0;
+  line-height: 24px;
+}
+.commentInput {
+  height: 30px;
+  outline: 0;
+  border: thin solid #ccc;
+  background-color:grey;
+  border-radius: 6px;
+  line-height: 30px;
+  padding: 8px;
+  font-size: 16px;
+  display: none;
+  color: rgb(235, 11, 11);
+}
+input::placeholder {
+  color: #111;
+}
+
+.replyTo {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color:red;
+}
+.replyTo:hover {
+  background-color:aquamarine;
+  font-size:20px; 
+}
+
