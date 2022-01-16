@@ -1,6 +1,6 @@
 //Example with simple Promise Handle
-/*
-const count = true;
+
+const count = true;     //Check with true/ false or 0/1.
 
 let countValue = new Promise(function (res,rej){
     
@@ -13,12 +13,11 @@ let countValue = new Promise(function (res,rej){
 });
 
 console.log(countValue);
-*/
 
-//Example with .then .catch >>>
+
+//Example with .then .catch >>>>>>>>>>>>>>>>>
 
 // returns a promise
-
 let fullfilledValue = new Promise(function (resolve, reject) {
     resolve("Promise resolved");
   });
@@ -34,7 +33,7 @@ fullfilledValue
       console.log("You can call multiple functions this way.");
    });
 
-//Example with Reject >>>>
+//Example with Reject >>>>>>>>>>>>>>>>
 
 // returns a promise
 let rejectValue = new Promise(function (resolve, reject) {
