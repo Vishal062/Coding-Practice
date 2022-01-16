@@ -20,11 +20,11 @@ function getUser() {
 
 //lets reWrite this function using AsyncAwait
 
-// async function getDataOfuser(){
-//     let url = "https://api.tvmaze.com/search/shows?q"
-//     const res = await fetch(url)    //What await will do here
-//     //It will pause the execution till the promise is resolved or rejected
-//     const userData = res.json();
-//     console.log(userData);
-//     console.log("Printing User Data");
-// }
+async function getDataOfuser(){
+    let url = "https://api.tvmaze.com/search/shows?q"
+    const res = await fetch(url)    //What await will do here
+    //It will pause the execution till the promise is resolved or rejected
+    const userData = res.json();
+    console.log(userData);
+    console.log("Printing User Data");
+}
