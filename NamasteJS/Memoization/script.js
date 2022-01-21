@@ -1,9 +1,9 @@
 // a simple function to add something
 function addTo80(n) {
     return n + 80;
-    }
+}
      
-    //create an empty object
+//create an empty object
     let cache={};
      
     // a memoized function to add
