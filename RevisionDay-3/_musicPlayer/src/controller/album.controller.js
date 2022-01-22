@@ -10,7 +10,7 @@ router.get("",async (req,res) => {
     const size = +req.query.limit;
     const formula = (page-1)*size;
 
-    let albumName = await Albums.find().skip().limit(size).lean().exec();
+    let albumName = await Albums.find().skip(formula).limit(size).lean().exec();
     res.status(200).send({albumName});
     
 });

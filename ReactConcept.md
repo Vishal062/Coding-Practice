@@ -165,3 +165,9 @@ MemoizedMovie outputs the same content as the original Movie component, but with
 
 >React.memo() is a great tool to memoize functional components. When applied correctly, it prevents useless re-renderings when the next props equal to previous ones.
 Take precautions when memoizing components that use props as callbacks. Make sure to provide the same callback function instance between renderings.
+
+## What is redux?
+
+>Redux is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments and are easy to test. With Redux, the state of your application is kept in a store, and each component can access any state that it needs from this store.
+
+[`Redux`](https://blog.logrocket.com/why-use-redux-reasons-with-clear-examples-d21bffd5835/)
