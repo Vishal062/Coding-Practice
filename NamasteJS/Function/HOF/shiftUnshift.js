@@ -10,6 +10,14 @@
 - More then one elements can be added to an array.
 - Returns the new length of a array.
 - Changes the new length of array.
+
+# Push :
+- Push add the element in the end of array.
+- one or more than elemnet can be added at a same time.
+
+# Pop : 
+- Pop removes the element from the end of the array.
+- Only one element can be removed at a same time.
 */ 
 
 //shift>
@@ -23,3 +31,15 @@ console.log(arr);   //[2,3,4,5];
 let arr1 = [1,2,3,4,5];
 let x1 = arr1.unshift(6,'7');
 console.log(arr1);
+
+//Push>
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi","stawberry");
+console.log(fruits);
+
+//Pop>
+
+const popEx = ["Banana", "Orange", "Apple", "Mango"];
+let rem = popEx.pop();
+console.log(rem, popEx);
