@@ -23,4 +23,19 @@ prom.then((data)=>{
 })
 .catch((err)=>{
     console.log(err);
-})
+});
+
+//Promise.race([]);
+//Promise.all([]);
+
+/***************************Closure******************************/
+
+function clos1(){
+    let a =10;
+    return function f2(){
+        console.log("Hello a:",a);
+    }
+}
+
+var res = clos1();
+res();
