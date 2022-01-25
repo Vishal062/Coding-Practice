@@ -43,3 +43,10 @@ console.log(fruits);
 const popEx = ["Banana", "Orange", "Apple", "Mango"];
 let rem = popEx.pop();
 console.log(rem, popEx);
+
+
+let str = [1,2];
+
+str = [3,4];
+
+console.log(str);
