@@ -1,10 +1,11 @@
-// const pro = new Promise((res,rej) => {
-//     setTimeout((res) => {
-//         console.log("After 1.5 sec I resolved The Promise");
-//     },1500);
-// })
+/*
+const pro = new Promise((res,rej) => {
+    setTimeout((res) => {
+        console.log("After 1.5 sec I resolved The Promise");
+    },1500);
+})
 
-// console.log(pro);
+console.log(pro);
 
 const prom = new Promise((res,rej) => {
     const number = Math.random();
@@ -24,12 +25,12 @@ prom.then((data)=>{
 .catch((err)=>{
     console.log(err);
 });
-
+*/
 //Promise.race([]);
 //Promise.all([]);
 
 /***************************Closure******************************/
-
+/*
 function clos1(){
     let a =10;
     return function f2(){
@@ -38,4 +39,38 @@ function clos1(){
 }
 
 var res = clos1();
-res();
+res();  //Here res acts like a closure
+*/
+
+/****************Call************/
+
+const bindEx = {
+    name:"vishal",
+    age:24,
+    role:"WebDev",
+}
+
+function printDetails(){
+    console.log(`${this.name} is a ${this.role} at the age of ${this.age}`);
+}
+//printDetails(bindEx); This will give us undefined>>
+
+const res =printDetails.bind(bindEx);
+res()
+
+/************************Object Example**************************/
+let profile ={
+    name: "vishalSinha"
+}
+
+profile.age = 24;
+
+console.log(profile);
+//If I want to prevent anyone to add extra parameter to this object then how????
+
+//We have to to>>
+Object.freeze(profile);
+
+profile.number = 1234;
+
+console.log(profile);
