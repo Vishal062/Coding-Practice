@@ -74,3 +74,19 @@ Object.freeze(profile);
 profile.number = 1234;
 
 console.log(profile);
+
+//And in place of freeze if you use seal its allows you to change the value of the property
+//But doesn't allows you to add a new property>>>>>>
+let profile2 = {
+    firstName:"vishalSinha"
+}
+// profile2.firstName = "Sani";
+// profile2.age = 24;
+
+// console.log(profile2);
+
+Object.seal(profile2);
+profile2.firstName = "NewSani";
+profile2.age = 28;
+
+console.log("Seal",profile2);
