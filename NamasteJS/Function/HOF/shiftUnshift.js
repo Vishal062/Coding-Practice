@@ -23,7 +23,11 @@
 //shift>
 
 let arr = [1,2,3,4,5];
+var res = arr.shift();
+console.log(res);
+
 let x = arr.shift();
+
 console.log(x); // 1;
 console.log(arr);   //[2,3,4,5];
 
