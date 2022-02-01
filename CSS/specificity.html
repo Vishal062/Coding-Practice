@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* First rule its follow the last style if nothing is there */
+        div.Name1{
+            background-color: red;
+            border:2px solid black;
+            margin-top:10px;
+        }
+        div#MyID{
+            background-color: aqua;
+            border:2px solid black;
+            margin-top:10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="Name1">
+        welcome to specificity1
+    </div>
+    <div id="MyID">
+        welcome to specificity2
+    </div>
+    
+</body>
+</html>
+
+<!-- If there are two or more CSS rules that point to the same element, 
+the selector with the highest specificity value will "apply", this 
+is called specificity in css. -->
