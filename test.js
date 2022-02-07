@@ -90,3 +90,18 @@ profile2.firstName = "NewSani";
 profile2.age = 28;
 
 console.log("Seal",profile2);
+
+
+
+// const arr =[1,2,3,3,4,5];
+
+// const set = new Set([...arr]);
+//console.log([...set]);
+// console.log(set);
+
+
+const arr1 = [1,2,3,4,5,6,7];
+
+let a1 = arr1.splice(2) // 3 4 5;
+
+console.log(a1);

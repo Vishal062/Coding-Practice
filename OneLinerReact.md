@@ -2,6 +2,9 @@
 
 >=> React.StricMode is a helper functinality of the JavaScript that helps us to write a cleaner code in a react. It gives feedback in the form of warning if we do not follow React guidelines.
 
+>## What is react?
+>React js is an open source javascript libary, is used to building User Interface in single page application, react is used for building UI in mobile and web apps.React is not a framework its just a library.
+
 # Q2. What is JSX?
 
 
