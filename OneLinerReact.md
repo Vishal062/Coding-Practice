@@ -50,7 +50,7 @@
 
 >=> Hooks are the new introduced in react 16.8 version. React hooks are used in functional components to use state or other featires of the react without writing a class. Hooks are the functions which allows us to use the lifecycle features of the React. And it does not works in Class Components.
 
-## Rules of Hools:
+## Rules of Hooks:
 1. It should be call at the top level of the components.
 2. Only calls in the functional components.
 
