@@ -54,6 +54,9 @@
 1. It should be call at the top level of the components.
 2. Only calls in the functional components.
 
+## Main Hooks:
+> useState , useEffect, useContext, useCallback, useReducer, useLayoutEffect,useMemo, useRef.
+
 # Q11. What is prop Drilling?
 
 >=> Prop drilling is the process in React app in which props are passed from one part of the tree to the anther by going through the others part which do not actually need data but helping in passing the data through tree. 
