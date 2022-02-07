@@ -65,15 +65,15 @@ Modifying state should happen with the setState ( ) method
 
 >[More details about State](https://www.freecodecamp.org/news/react-js-for-beginners-props-state-explained/)
 
-# Q8. What is pure components?
+# Q9. What is pure components?
 
 >=> Pure components are the components which are not re-renders if the previous props or state are same. Pure components restricts the re-rendering and ensuring the higher performance of the components.
 
-# Q9. What are keys in React?
+# Q10. What are keys in React?
 
 >=> Key are unique identifiers in the React that hepls us to identify which components is updated, deleted or changed in the list. Key also helps to determine which components should re-render instead of re-rendering the whole lists.
 
-# Q10. What are hooks?
+# Q11. What are hooks?
 
 >=> Hooks are the new introduced in react 16.8 version. React hooks are used in functional components to use state or other featires of the react without writing a class. Hooks are the functions which allows us to use the lifecycle features of the React. And it does not works in Class Components.
 
@@ -83,6 +83,21 @@ Modifying state should happen with the setState ( ) method
 
 ## Main Hooks:
 > useState , useEffect, useContext, useCallback, useReducer, useLayoutEffect,useMemo, useRef.
+
+# Q12. What is an event in React?
+
+>In React, events are the triggered reactions to specific actions like mouse hover, mouse click, key press, etc. Handling these events is similar to handling events in DOM elements. But there are some syntactical differences like:
+
+- Events are named using camel case instead of just using the lowercase.
+
+- Events are passed as functions instead of strings.
+
+
+# Q13. What are the synthetic events?
+
+>Synthetic events are the objects which act as a cross-browser wrapper around the browser’s native event. They combine the behavior of different browsers into one API. This is done to make sure that the events show consistent properties across different browsers.
+
+- In your memory remember all the onClick(s), onBlur(s), onChange(s) you have ever used in your react components, these are not the real ones, these are react's synthetic events.
 
 # Q11. What is prop Drilling?
 
