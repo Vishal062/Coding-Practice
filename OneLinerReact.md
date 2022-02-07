@@ -70,3 +70,48 @@
 
 >=> Webpack is a module bundler, its main purpose is to bundles the JavaScript files for using in a browser. It takes desperate dependencies, create modules for them and bundles them in a managerial files. It is generally useful in SPAs.
 
+# Q14. How useEffect work?
+
+>The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers, useEffect accepts two arguments. The second argument is optional.
+useEffect(function, [dependency]). 
+
+## Example :
+
+```
+import { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
+
+function Timer() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setCount((count) => count + 1);
+    }, 1000);
+  });
+
+  return <h1>I've rendered {count} times!</h1>;
+}
+```
+
+>1. No Dependency passed :
+```
+useEffect(() => {
+  //Runs on every render
+});
+```
+
+>2. An empty array :
+```
+useEffect(() => {
+  //Runs only on the first render
+}, []);
+```
+>3. Props or state values :
+```
+useEffect(() => {
+  //Runs on the first render
+  //And any time any dependency value changes
+}, [prop, state]);
+```
+
