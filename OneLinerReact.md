@@ -5,6 +5,12 @@
 >## What is react?
 >React js is an open source javascript libary, is used to building User Interface in single page application, react is used for building UI in mobile and web apps.React is not a framework its just a library.
 
+> ## Main feature of react are :
+>It uses the virtual DOM instead of the real DOM.
+>It uses server-side rendering.
+>It follows uni-directional data flow or data binding.
+
+
 # Q2. What is JSX?
 
 
@@ -33,10 +39,31 @@
 
 >=> Props are the short of properties and this is used for passing data from parent components to the child components.
 
+>Props is the shorthand for Properties in React. They are read-only components which must be kept pure i.e. immutable. They are always passed down from the parent to the child components throughout the application. A child component can never send a prop back to the parent component. This helps in maintaining the unidirectional data flow and are generally used to render the dynamically generated data
+
 # Q7. What is State?
 
 
 >=> State is a plain JavaScript object which is used to represent that current situation of the components.State is used to create components own data and manage that data.
+
+>They are mutable (to be changed) unlike the props and create dynamic and interactive components. They are accessed via this.state(), setState() is asynchronous.
+- State shouldn’t be modified directly – the setState( ) should be used
+- State affects the performance of your app, and therefore it shouldn’t be used unnecessarily.
+
+
+# Q8. What is the diffrence between State and Props?
+- Components receive data from outside with props, whereas they can create and manage their own data with state
+
+- Props are used to pass data, whereas state is for managing data
+
+- Data from props is read-only, and cannot be modified by a component that is receiving it from outside
+
+- State data can be modified by its own component, but is private (cannot be accessed from outside)
+
+- Props can only be passed from parent component to child (unidirectional flow)
+Modifying state should happen with the setState ( ) method
+
+>[More details about State](https://www.freecodecamp.org/news/react-js-for-beginners-props-state-explained/)
 
 # Q8. What is pure components?
 
