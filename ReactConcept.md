@@ -171,3 +171,110 @@ Take precautions when memoizing components that use props as callbacks. Make sur
 >Redux is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments and are easy to test. With Redux, the state of your application is kept in a store, and each component can access any state that it needs from this store.
 
 [`Redux`](https://blog.logrocket.com/why-use-redux-reasons-with-clear-examples-d21bffd5835/)
+
+
+## What are the three principles that Redux follows?
+
+>1. Single source of truth: The state of the entire application is stored in an object/ state tree within a single store. The single state tree makes it easier to keep track of changes over time and debug or inspect the application.
+
+>2. State is read-only:The only way to change the state is to trigger an action. An action is a plain JS object describing the change. Just like state is the minimal representation of data, the action is the minimal representation of the change to that data. 
+
+>3. Changes are made with pure functions: In order to specify how the state tree is transformed by actions, you need pure functions. Pure functions are those whose return value depends solely on the values of their arguments.
+
+
+## What do you understand by “Single source of truth”?
+
+>Redux uses ‘Store’ for storing the application’s entire state at one place. So all the component’s states are stored in the Store and they receive updates from the Store itself. The single state tree makes it easier to keep track of changes over time and debug or inspect the application.
+
+## List down the components of Redux.
+> Redux is composed of the following components:
+- Action – It’s an object that describes what happened.
+- Reducer –  It is a place to determine how the state will change.
+- Store – State/ Object tree of the entire application is saved in the Store.
+- View – Simply displays the data provided by the Store.
+
+## What is redux persist?
+Redux persist is a library  that allows saving redux store in the local storage of an application.
+
+## How do I use redux persist in React?
+Install redux persist
+Configure redux store
+
+
+## what is a Generator function ?
+
+>A normal function starts from the very first line of the function, runs until the end until it returns values or the last line of the function, and returns only one, single value.
+What if we want to return multiple values and pause a function execution? It’s possible in JavaScript, and we can achieve this with the help of generator functions.
+
+> Key Facts About Generator Functions
+
+- A generator function is quite different from normal functions. To create a generator, we will have to use “function*” as the syntax construct.
+Providing an “*” after a function keyword indicates you’re creating a generator function.
+
+> How a Generator Function Works
+
+- Calling generator functions is not similar to calling normal regular functions. To call a generator function, we will need to call it using the “next()” method. When we call a generator function with the next() method, it will run the execution until the nearest yield “<value>” statement. The value can be omitted, and it will return “undefined.” The function execution is paused, and the yielded value returns to the generator’s caller.
+
+- The result of next() is always an object with two properties:
+ - Value: the yielded value.
+ - Done: true if the function code is finished else will return false.
+ 
+>Example:Id generator>>>
+
+```
+function* generateId() {
+  let id = 1
+
+  while (true) {
+    yield id
+    id++
+  }
+}
+
+const gen = generateId()
+console.log(gen.next().value)
+// 1
+console.log(gen.next().value)
+// 2
+console.log(gen.next().value)
+// 3
+```
+
+```
+function* steps(){ 
+let a=10; let b=20; console.log(a+b); 
+yield "first time yield" 
+console.log(a*b);
+ yield "second time yield" 
+console.log(b/a);
+ yield "third time yield"
+ return 
+}
+const gen= steps() 
+gen.next().value
+ gen.next().value
+
+```
+
+## Cookies vs Local Storage vs Session Storage?
+
+>Cookies
+- Has different expiration dates (both the server or client can set up expiration date)
+- The Client can't access the Cookies if the HttpOnly flag is true
+- Has SSL Support
+- Data are transferred on each HTTP request
+- 4kb limit
+
+>Local Storage
+- Has no expiration date
+- Client only
+- Has no SSL support
+- Data are not transferred on each HTTP request
+- 5 mb limit (check with the browser)
+
+>Session Storage
+- Data is gone when you close the browser tab
+- Client only
+- Has no SSL support
+- Data are not transferred on each HTTP request
+- 5-10 mb limit (check with the browser)

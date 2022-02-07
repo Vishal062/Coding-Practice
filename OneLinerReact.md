@@ -52,6 +52,7 @@
 
 
 # Q8. What is the diffrence between State and Props?
+
 - Components receive data from outside with props, whereas they can create and manage their own data with state
 
 - Props are used to pass data, whereas state is for managing data
@@ -68,6 +69,8 @@ Modifying state should happen with the setState ( ) method
 # Q9. What is pure components?
 
 >=> Pure components are the components which are not re-renders if the previous props or state are same. Pure components restricts the re-rendering and ensuring the higher performance of the components.
+
+- They can replace any component which only has a render(). These components enhance the simplicity of the code and performance of the application.
 
 # Q10. What are keys in React?
 
@@ -106,6 +109,8 @@ Modifying state should happen with the setState ( ) method
 # Q12. What are Higher order components?
 
 >=> Higher order components are the components which takes components as an argumnets and returns a new components.
+
+- Higher Order Component is an advanced way of reusing the component logic. Basically, it’s a pattern that is derived from React’s compositional nature. HOC are custom components which wrap another component within it. They can accept any dynamically provided child component but they won’t modify or copy any behavior from their input components.
 
 
 # Q13. What is webpack?
@@ -156,4 +161,15 @@ useEffect(() => {
   //And any time any dependency value changes
 }, [prop, state]);
 ```
+
+# Q19. What were the major problems with the MVC framework?
+
+- DOM manipulation was very expensive
+- Applications were slow and inefficient
+- There was huge memory wastage.
+
+
+# Q20. What is forwardRef ?
+The forwardRef method in React allows parent components to move down (or “forward”) refs to their children. ForwardRef gives a child component a reference to a DOM entity created by its parent component in React. This helps the child to read and modify the element from any location where it is used.
+
 
