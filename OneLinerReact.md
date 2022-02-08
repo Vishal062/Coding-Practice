@@ -173,3 +173,12 @@ useEffect(() => {
 The forwardRef method in React allows parent components to move down (or “forward”) refs to their children. ForwardRef gives a child component a reference to a DOM entity created by its parent component in React. This helps the child to read and modify the element from any location where it is used.
 
 
+# Q21. what is useRef ?
+
+>the useRef is a hook that allow you to create a direct refrence to the dom element in the functional components.
+```const ref = useRef(InitialValue)```
+the useRef returns a mutable ref object. this object has a property called current.
+- the value is persisted in the ref.current property.
+- the .current property could be initialized to the passed arguments initialValue.
+- useState and useReducer can cause your component to re render each time there is a call to update the functions.
+- useRef() hook to keep track of variables withoiut causing re-renders. 
