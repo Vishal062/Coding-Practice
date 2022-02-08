@@ -5,12 +5,12 @@ const pro = new Promise((res,rej) => {
     },1500);
 })
 
-console.log(pro);
+//console.log(pro);
 
 const prom = new Promise((res,rej) => {
     const number = Math.random();
 
-    if(number>7){
+    if(number<7){
         res("Number Is less Then 7");
     }
     else{
