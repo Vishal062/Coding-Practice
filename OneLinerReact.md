@@ -182,3 +182,52 @@ the useRef returns a mutable ref object. this object has a property called curre
 - the .current property could be initialized to the passed arguments initialValue.
 - useState and useReducer can cause your component to re render each time there is a call to update the functions.
 - useRef() hook to keep track of variables withoiut causing re-renders. 
+
+
+# Q22. What is flux?
+
+>flux is an application design paradigm used as a replacement for the more traditional mvc pattern It is not a framework or library but a new kind of architecture that companies react and the concept of unidirectional data flow.
+
+>The workflow between dispatcher, stores, and views component with distinct inputs and outputs.
+
+# Q23. What is redux DevTool?
+
+>redux devtool is a live editing travel enviroment for redux with hot reloding, action, replay, and customizable Ui.
+
+# Q24. What is the diffrence between Componenet and container in Redux?
+
+- Companent is a part of react Api. A component is a class or function that describe part of a React UI.
+
+- Container is an informal term for a react component that is connected to a redux store. containers receive redux state updates and dispatch actions and they usually dont render dom elements they delegate rendering to presentational child components.
+
+# Q24. What are reducers in redux?
+
+>The reducers is a pure functions that takes the previos state and an action and returns the next state.
+```
+(previousState, action) => newState
+```
+- Its called a reducer because its the type of function you would pass to array. ```prototype.reduce(reducer,?initialValue)```.
+
+- Its very Important that the reducer stay pure,Things you should never do inside a reducer.
+ - Mututate its arguments.
+ - perform side effect like API calls and routing transitions.
+ - call non pure functions eg: Date.now() or Math.random().
+
+# Q25. What is redux saga?
+
+>redux-saga is a library that aims to make side effects (i.e: asynchronous things like data fetching and Impure things like accessing the browser cache ) in react/redux applications easire and better.
+
+- its available in NPM as: npm install --save redux-saga
+
+# Q26. what is redux thunk?
+
+>Redux thunk middleware allows you to write actions creators that return a function instead of non action. That thunk can be used to delay the dispatch of an action or to dispatch only if a certain condition is met.The inner function receives the store methods dispatch and getState() as parameter.
+
+# Q27. What is the diffrence between react-context and react-redux?
+
+> you can use Context in your application directly and is going to be great for passing down data to deeply nested components which what it was designed for. Whereas redux is much more powerful and provides a large number of features that the context api doesn't provide.
+
+- Also react redux uses context internally but it doesn't expose this fact in the public API. so you should feel much safer using context via react redux than directly because if it changes, then burden of updating the code will be on react Redux instead developer responsiblity.
+
+
+# Q28. 
