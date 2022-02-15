@@ -123,4 +123,3 @@ Following are the main types of Middleware:
 - Error-handling Middleware
 - Built-in Middleware
 - Third-party Middleware
-
