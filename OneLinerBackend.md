@@ -144,3 +144,10 @@ Following are the main types of Middleware:
 - Error-handling Middleware
 - Built-in Middleware
 - Third-party Middleware
+
+
+# Q13. Q12. Explain what is Mongoose?
+
+>Mongoose is an Object Data Modeling or ODM library for MongoDB and Node. js. that manages relationships between data, provides schema validation and is used to translate between objects in code and the representation of those objects in MongoDB
+
+# Q14.
