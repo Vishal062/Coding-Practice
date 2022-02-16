@@ -26,6 +26,19 @@
 - Faster than traditional database.
 - Expressive query languages.
 
+## Why Use MongoDB?
+
+- Document-oriented – Since MongoDB is a NoSQL type database, instead of having data in a relational type format, it stores the data in documents. This makes MongoDB very flexible and adaptable to real business world situation and requirements.
+
+- Ad hoc queries – MongoDB supports searching by field, range queries, and regular expression searches. Queries can be made to return specific fields within documents.
+
+- Indexing – Indexes can be created to improve the performance of searches within MongoDB. Any field in a MongoDB document can be indexed.
+
+- Replication – MongoDB can provide high availability with replica sets. A replica set consists of two or more mongo DB instances. Each replica set member may act in the role of the primary or secondary replica at any time. The primary replica is the main server which interacts with the client and performs all the read/write 
+operations. The Secondary replicas maintain a copy of the data of the primary using built-in replication. When a primary replica fails, the replica set automatically switches over to the secondary and then it becomes the primary server.
+
+- Load balancing – MongoDB uses the concept of sharding to scale horizontally by splitting data across multiple MongoDB instances. MongoDB can run over multiple servers, balancing the load and/or duplicating data to keep the system up and running in case of hardware failure.
+
 # Q4. What is replication in MongoDb?
 
 >Replication is the process of synchronizing data across multiple server. replications provide redundancy and increase data availablity.with multiple copies of data on diffrent database servers, replication protects a database from the loss of a single server. replication also allow you to recover from hardware failure and service interruptions.
@@ -41,7 +54,15 @@
 >Node.js (Node) is an open source development platform for executing JavaScript code server-side. Node is useful for developing applications that require a persistent connection from the browser to the server.
 
 
-# Q7. 
+# Q7. Q.10 Our applications generally consists of 3 layers?
+
+>View Layer :- Frontend of the application and as we are using React for all of the frontend needs hence we don't have a view layer in our express application but you can create views in express but out of scope for this course.
+
+
+>Application Layer :- This is like the coordinator of the system and it takes in requests from the view layer and then delegates to different parts of the code and business layer to get different things, for e.g :- passing to validations, authentication and authorisation systems for check auth and validations, database models for getting the required data processing done and then finally deciding on how to format the output and then send the output to the view layer and generally are represented by controllers.
+
+
+>Business Layer or Data Layer :- This is where the database activities happen and is the heart of the application and if represented in model files.
 
 
 # Q8. How do you manage packages in your node.js project?
