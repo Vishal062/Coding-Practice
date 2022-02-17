@@ -15,6 +15,8 @@
 - capped collection
 - Indexing(Any field in mongoDb can be indexed)
 
+>MongoDB is an open source NoSQL database management program. NoSQL is used as an alternative to traditional relational databases. NoSQL databases are quite useful for working with large sets of distributed data. MongoDB is a tool that can manage document-oriented information, store or retrieve information
+
 # Q2. How many index does mongoDb create by default for a new collections.
 
 > by default mongoDb createed the _id_collections for every collections.
@@ -77,7 +79,7 @@ operations. The Secondary replicas maintain a copy of the data of the primary us
 - It runs on a chrome v8 engine which is written in c++ and is highly performant with constant improvement
 
 
-# Q6. Why is Node.js single-threaded?
+# Q10. Why is Node.js single-threaded?
 
 >As Node.js follows Single-Threaded with Event Loop Model inspired by JavaScript Event-based model with JavaScript callback mechanism. So, node.js is single-threaded similar to JavaScript but not purely JavaScript code which implies things that are done asynchronously like network calls, file system tasks, DNS lookup, etc. 
 
@@ -88,11 +90,11 @@ operations. The Secondary replicas maintain a copy of the data of the primary us
     >The event loop, aka the main thread, allows running one thing at a time. Having said that, Node.js JavaScript code runs on a single thread.
 
 
-# Q7. What is Ajax?
+# Q11. What is Ajax?
 
 >Ajax is an acronym for Asynchronous Javascript and XML. It is used to communicate with the server without refreshing the web page and thus increasing the user experience and better performance.
 
-# Q8. what is express Js?
+# Q12. what is express Js?
 
 >Express JS is a free open source web applications framework for NodeJs. It is used for designing and building web applications quickly and easily. since express is only requires javascript it becomes easier for programmers and developers to build any applications.
 
@@ -104,7 +106,7 @@ operations. The Secondary replicas maintain a copy of the data of the primary us
 
 >without ExpressJs you have to write your own code to build a routing component which is a time consuming and tedious task.
 
-# Q9. What are some distinctive features of Express?
+# Q13. What are some distinctive features of Express?
 
 >js can be used to design single-page, multi-page, and hybrid web applications and APIs.
 
@@ -117,17 +119,17 @@ operations. The Secondary replicas maintain a copy of the data of the primary us
 - It is asynchronous and single-threaded.
 - Its robust API makes routing easy.
 
-# Q10. Why do we use Express.js?
+# Q14. Why do we use Express.js?
 
 >Express.js is an automatically prebuilt Node.js framework that facilitates us to create server-side web applications faster and smarter. The main reason for choosing Express is its simplicity, minimalism, flexibility, and scalability characteristics.
 
-# Q11. Which are the arguments available to an Express JS route handler function?
+# Q15. Which are the arguments available to an Express JS route handler function?
 
 - Req: the request object
 - Res: the response object
 - Next (optional): It is a function employed to pass management to one of the above route handlers.
 
-# Q12. What is Middleware in Express.js? What are the different types of Middleware?
+# Q16. What is Middleware in Express.js? What are the different types of Middleware?
 
 >Middleware is a function invoked by the Express routing layer before the final request handler.
 
@@ -146,8 +148,7 @@ Following are the main types of Middleware:
 - Third-party Middleware
 
 
-# Q13. Q12. Explain what is Mongoose?
+# Q17. Explain what is Mongoose?
 
 >Mongoose is an Object Data Modeling or ODM library for MongoDB and Node. js. that manages relationships between data, provides schema validation and is used to translate between objects in code and the representation of those objects in MongoDB
 
-# Q14.
