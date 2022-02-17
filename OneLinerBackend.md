@@ -56,7 +56,7 @@ operations. The Secondary replicas maintain a copy of the data of the primary us
 >Node.js (Node) is an open source development platform for executing JavaScript code server-side. Node is useful for developing applications that require a persistent connection from the browser to the server.
 
 
-# Q7. Q.10 Our applications generally consists of 3 layers?
+# Q.10 Our applications generally consists of 3 layers?
 
 >View Layer :- Frontend of the application and as we are using React for all of the frontend needs hence we don't have a view layer in our express application but you can create views in express but out of scope for this course.
 
